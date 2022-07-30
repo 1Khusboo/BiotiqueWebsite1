@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&family=Rubik:wght@600&display=swap');
+
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/*Navigation Bar : Logo and Image  */
+#logo{
+    margin: 10px 34px;
+
+}
+#logo img{
+    height: 60px;
+    margin: 3px 7px;
+
+}
+/*Navigation Bar :List Styling  */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar:before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width: 100%;
+    z-index:-1;
+    opacity:0.4;
+
+}
+#navbar ul li{
+    /* color: white;  */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(82, 4, 4);
+    font-size: 22px;
+    font-family:Arial, Helvetica, sans-serif;
+
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    /* height: 700px; */
+}
+#home:before{
+    content: "";
+    background-image:url("beauty6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:absolute;
+    height:100%;
+    width: 100%;
+    z-index:-1;
+    opacity:0.89;
+}
+#home h1{
+    color: rgb(66, 3, 61);
+    text-align: center;
+    font-size: 3.6rem;
+}
+#home p{
+    color: rgb(22, 6, 82);
+    text-align: center;
+    font-size: 1.6rem;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 90px;
+
+
+}
+
+/* Utility Classes  */
+.h-primary{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:3.4rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:2.4rem;
+    padding: 12px;
+    color: brown;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+/* Services Section  */
+#services{
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 40px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(247, 242, 236);
+    
+}
+.services-container{
+    margin-top: 300px;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 300px;
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/* Clients Section  */
+#client-section{
+    height: 344px;
+    margin-top: 200px;
+    position: relative;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 130px;
+}
+.client-item{
+    padding:34px;
+}
+#client-section:before{
+    content: "";
+    position: absolute;
+    background: url("beauty5.jpg");
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+/* Contact Section  */
+#contact{
+    position:relative;
+    margin-top: 100px;
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: 0.7;
+    background: url('') no-repeat center center/cover ;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px ;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+footer{
+    background:black;
+    color: white;
+    padding: 9px 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.center h6{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.center h4{
+    margin-top: 10px;
+    font-size: 20px;
+}
+#about{
+    position: relative;
+    margin-top: 150px;
+}
+#about-box p{
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 2px 200px;
+    word-spacing: 2px;
+    font-size: 20px;
+}
+#about::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: 0.7;
+    background: url('beauty.jpg') no-repeat center center/cover ;
+}
+
